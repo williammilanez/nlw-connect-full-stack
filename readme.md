@@ -4,7 +4,6 @@
 O projeto "NLW#19 Connect" foi construído durante o evento NLW#19 da Rocketseat, focado no desenvolvimento de uma aplicação full-stack.
 O objetivo do projeto é criar uma plataforma para inscrição em um evento, com recursos de compartilhamento de links de inscrição e acompanhamento de inscrições realizadas.
 
-![Capa do Projeto]
 <div align="center">
   <img alt="Capa do Projeto" src="./images/project_cover.png" width="75%">
 </div>
