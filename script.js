@@ -4,6 +4,7 @@ const formAction = () => {
     const form = document.getElementById("form")
     form.onsubmit = (event) => {
         event.preventDefault()
+        
     }
 }
 
