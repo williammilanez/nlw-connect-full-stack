@@ -1,6 +1,6 @@
 # NLW#19 Connect - Full-Stack - CodeCraft Summit 2025
 
-## Sobre o Projeto 💱
+## Sobre o Projeto 📝
 O projeto "NLW#19 Connect" foi construído durante o evento NLW#19 da Rocketseat, focado no desenvolvimento de uma aplicação full-stack.
 O objetivo do projeto é criar uma plataforma para inscrição em um evento, com recursos de compartilhamento de links de inscrição e acompanhamento de inscrições realizadas.
 
@@ -14,17 +14,17 @@ O objetivo do projeto é criar uma plataforma para inscrição em um evento, com
 - Estatísticas de inscrições realizadas
 
 ## Tecnologias Utilizadas ✅
-### HTML
+### HTML 📚
 - Hypertext
 - Markup
   - tags
   - atributes
 - Language
-### CSS
+### CSS 📚
 - Cascading
 - Style
 - Sheet
-### JavaScript
+### JavaScript 📚
 - Linguagem Interpretada pelo Browser
 - Multiparadigmas
 
