@@ -38,7 +38,7 @@ Apresentar os dados
 const corBola = "azul" + "escuro" // azulescuro
 const idade = 10 + 2 // 12
 
-//arrow function
+// arrow function
 const soma = (a, b) => {
   return a + b
 }
