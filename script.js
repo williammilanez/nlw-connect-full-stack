@@ -1,7 +1,6 @@
 const app = document.getElementById("app")
 
 // array, vetor
-
 const users = [
     {
         email: "test@test.com",
