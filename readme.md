@@ -40,7 +40,7 @@ O objetivo do projeto é criar uma plataforma para inscrição em um evento, com
 - Conversão de dados
 
 ## Algoritmo 📖
-- Sequência de passos lógica e finita para resolução de um problema
+- Sequência de passos lógica e finita para resolução de um problema.
 
 ## Fases da resolução de um problema 📖
 - Coletar os dados
