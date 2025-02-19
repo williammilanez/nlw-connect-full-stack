@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-:root, input, button {
+:root,
+input,
+button {
     font-family: "Montserrat";
 }
 
@@ -89,6 +91,7 @@ p {
     color: #95A1B1;
 
     text-align: justify;
+    text-indent: 1rem;
 }
 
 .registration h2 {

@@ -32,6 +32,7 @@ const getTotalSubscribers = (userData) => {
     const subs = users.filter((user) => {
         return user.refBy == userData.ref
     })
+
     return subs.length
 }
 
@@ -42,6 +43,9 @@ const showInvite = (userData) => {
 
       <p>
         Convide mais pessoas e concorra a prêmios! <br/>
+      </p>
+
+      <p>
         Compartilhe o link e acompanhe as inscrições:
       </p>
 
@@ -49,8 +53,8 @@ const showInvite = (userData) => {
         <label for="link">
           <img src="link.svg" alt="Link icon">
         </label>
-        <input type="text" id="link" value="https://evento.com?ref=${userData.ref}" disabled>
 
+        <input type="text" id="link" value="https://evento.com?ref=${userData.ref}" disabled>
       </div>
     </main>
 
@@ -65,6 +69,7 @@ const showInvite = (userData) => {
     </section>
     `
     app.setAttribute("class", "page-invite")
+
     updateImageLinks()
 }
 
@@ -76,13 +81,15 @@ const saveUser = (userData) => {
     }
 
     users.push(newUser)
+
     console.log(users)
+
     return newUser
 }
 
-
 const formAction = () => {
     const form = document.getElementById("form")
+
     form.onsubmit = (event) => {
         event.preventDefault()
         const formData = new FormData(form)
@@ -102,18 +109,6 @@ const formAction = () => {
 }
 
 const updateImageLinks = () => {
-    document.querySelectorAll('img').forEach((img) => {
-        if (img.src.includes('githubusercontent')) {
-            return
-        }
-        img.src = `https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/${img.src}`
-    })
-}
-
-// Se você estiver usando qualquer outro editor de código, substitua a função acima por essa função:
-
-/*
-const updateImageLinks = () => {
   document.querySelectorAll('img').forEach((img) => {
     const src = img.getAttribute("src"); 
     if (src && !src.startsWith("http")) {  
@@ -121,9 +116,6 @@ const updateImageLinks = () => {
     }
   });
 };
-
-*/
-
 
 const startApp = () => {
     const content = `
@@ -133,12 +125,17 @@ const startApp = () => {
         <h2>
           Sobre o evento
         </h2>
+
         <span class="badge">AO VIVO</span>
       </div>
 
       <p>
         Um evento feito por e para pessoas desenvolvedoras apaixonadas por criar soluções inovadoras e compartilhar conhecimento. Vamos mergulhar nas tendências mais recentes em desenvolvimento de software, arquitetura de sistemas e tecnologias emergentes, com palestras, workshops e hackathons.
-        <br/><br/>Dias 15 a 17 de março | Das 18h às 21h | Online & Gratuito 
+        <br/><br/>
+      </p>
+
+      <p>
+        Dias 15 a 17 de março | Das 18h às 21h | Online & Gratuito 
       </p>
     </section>
 
@@ -151,6 +148,7 @@ const startApp = () => {
             <label for="email">
               <img src="mail.svg" alt="Email icon">
             </label>
+
             <input type="email" id="email" name="email" placeholder="E-mail">
           </div>
 
@@ -158,12 +156,14 @@ const startApp = () => {
             <label for="phone">
               <img src="phone.svg" alt="Phone icon">
             </label>
+
             <input type="text" id="phone" name="phone" placeholder="Telefone">
           </div>
         </div>
 
         <button>
           Confirmar
+
           <img src="arrow.svg" alt="Arrow right">
         </button>
       </form>
@@ -171,10 +171,14 @@ const startApp = () => {
   </main>
 `
     app.innerHTML = content;
+
     app.setAttribute('class', 'page-start')
+
     updateImageLinks()
+
     formAction()
 }
+
 startApp()
 
 document.querySelector("header").onclick = () => startApp()
